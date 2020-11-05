@@ -1,3 +1,7 @@
+
+import "./asset/Css/styles.css";
+
+
 function App() {
   return (
     <div className="App">
