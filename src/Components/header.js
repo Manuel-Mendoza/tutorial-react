@@ -1,7 +1,7 @@
 import React from 'react';
-import Switch from './swich';
+import totalfollow from "./DataBase/total_follow"
 
-function Header(){
+function Header({children}){
     return (
     <div className="App">
       <header className="App-header">
@@ -9,13 +9,13 @@ function Header(){
           <div className="header-grid">
             <div>
               <h1>Social Media Dashboard</h1>
-              <p className="header-total">Total Followers: {4621 + 52 + 44 + 15}</p>
+              <p className="header-total">Total Followers:{totalfollow} </p>
             </div>
-            <Switch></Switch>
+            {children}
           </div>
         </div>
       </header>
     </div>
     );
-}
-export default Header;
+  }
+ export default Header;

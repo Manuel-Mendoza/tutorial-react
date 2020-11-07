@@ -1,12 +1,9 @@
-import React from 'react';
-
-import up from '../asset/Img//icon-up.svg';
+import img from "./img"
 
 
 function Card(props){
-
     return(
-        <article className={"card "+ props.red}>
+        <article className={"card "+props.red}>
             <p className="card-title">
                 <img src={props.icono} alt=" " />
                 {props.username}
@@ -16,7 +13,7 @@ function Card(props){
                 <span className="card-followers-title">Followers</span>
             </p>
             <p className="card-today">
-                <img src={up} alt=" "></img>
+                <img src={img.up} alt=" "></img>
                 {props.siguiendo} Siguiendo
             </p>
         </article>
